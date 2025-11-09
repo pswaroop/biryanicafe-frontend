@@ -1,7 +1,7 @@
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Star, Heart, Flame } from "lucide-react";
+import { Star, Heart, Flame, Leaf } from "lucide-react";
 import type { MenuItem } from "@shared/schema";
 import { useCartStore } from "@/lib/store";
 import { useState } from "react";
@@ -56,8 +56,9 @@ export function MenuCard({ item, imageUrl, index = 0 }: MenuCardProps) {
               </Button>
             </motion.div>
             {item.isVegetarian && (
-              <Badge className="absolute top-3 left-3 bg-green-600 dark:bg-green-700 text-white border-0 shadow-lg">
-                🌱 Veg
+              <Badge className="absolute top-3 left-3 bg-green-600 dark:bg-green-700 text-white border-0 shadow-lg flex items-center gap-1">
+                <Leaf className="h-3 w-3" />
+                Veg
               </Badge>
             )}
             <div className="absolute bottom-3 right-3 flex items-center gap-1 bg-background/90 backdrop-blur-sm rounded-full px-2 py-1 shadow-lg">
