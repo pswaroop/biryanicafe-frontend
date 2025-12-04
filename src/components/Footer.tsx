@@ -14,7 +14,7 @@ export function Footer() {
               Biriyani wala & Cafe
             </h3>
             <p className="text-muted-foreground mb-4">
-              Authentic Indian cuisine delivered fresh to your door.
+              Authentic Indian-Pakistani cuisine
             </p>
             <div className="flex gap-3">
               <Button
@@ -87,13 +87,13 @@ export function Footer() {
               <div className="flex items-start gap-2 text-muted-foreground">
                 <MapPin className="h-5 w-5 mt-0.5 flex-shrink-0" />
                 <span className="text-sm" data-testid="text-address">
-                  123 Food Street, Cuisine City, CC 12345
+                  2233 W 87th St Bridgeview, IL 60455 United States
                 </span>
               </div>
               <div className="flex items-center gap-2 text-muted-foreground">
                 <Phone className="h-5 w-5 flex-shrink-0" />
                 <span className="text-sm" data-testid="text-phone">
-                  (555) 123-4567
+                  (708) 529-7779
                 </span>
               </div>
               <div className="flex items-center gap-2 text-muted-foreground">

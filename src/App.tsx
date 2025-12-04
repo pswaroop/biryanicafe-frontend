@@ -25,6 +25,7 @@ function Router() {
       <Route path="/contact" component={Contact} />
       <Route path="/auth" component={Auth} />
       <Route path="/profile" component={Profile} />
+
       <Route component={NotFound} />
     </Switch>
   );
