@@ -23,7 +23,7 @@ import { Loader2, RefreshCw } from "lucide-react";
 
 // --- UPDATED INTERFACES ---
 interface Profile {
-  name: string;
+  username: string;
   email: string;
   phone?: string;
 }
@@ -574,9 +574,9 @@ export default function Auth() {
                 <div>
                   <Label>Name</Label>
                   <Input
-                    value={profile?.name || ""}
+                    value={profile?.username || ""}
                     onChange={(e) =>
-                      setProfile({ ...profile!, name: e.target.value })
+                      setProfile({ ...profile!, username: e.target.value })
                     }
                     required
                   />
@@ -628,9 +628,9 @@ export default function Auth() {
                       <div>
                         <Label>Name</Label>
                         <Input
-                          value={profile?.name || ""}
+                          value={profile?.username || ""}
                           onChange={(e) =>
-                            setProfile({ ...profile!, name: e.target.value })
+                            setProfile({ ...profile!, username: e.target.value })
                           }
                           required
                         />
